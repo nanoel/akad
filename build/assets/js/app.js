@@ -26,7 +26,7 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
 
 		$slider.slick({
 			autoplay: true,
-			autoplaySpeed: 3000,
+			autoplaySpeed: 2500,
 			arrows: false,
 			dots: true,
 			slide: '.ba-slide'

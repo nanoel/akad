@@ -1,6 +1,11 @@
+@import "bootstrap-sprockets";
 @import "bootstrap-variables";
 @import "bootstrap-custom";
+@import "mixins";
 @import "nav";
+@import "footer";
+
+
 
 
 @import "slick.scss";
@@ -19,6 +24,52 @@ body{
 	font: 400 14px/2.2 'Open Sans', sans-serif;
 	background-color: #ffffff;
 	color: #60606e;
+}
+
+a,
+[type="submit"],
+[type="button"],
+button,
+.btn {
+	@include ba-transition;
+}
+
+
+.btn{
+    @include ba-transition;
+	display: inline-block;
+	background: $brand-primary;
+	color: #FFF;
+	font: 700 14px/51px $headings-font-family;
+	padding: 0 32px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 0;
+	height: 50px;
+	&:hover, &:focus {
+		background: darken($brand-primary, 20%);
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	&--light {
+		background:
+		color: $brand-primary;
+		&:hover, &:focus {
+			background: darken(#fff, 5%);
+			color: $brand-primary;
+		}
+	}
+}
+
+
+.form-control {
+	box-shadow: none;
+	font-weight: 700;
+	font-size: 12px;
+	font-family: $headings-font-family;
+	text-transform: uppercase;
 }
 
 .ba-intro {
@@ -213,4 +264,28 @@ body{
 		}
 	}
 }
+
+
+.ba-suscribe {
+	background: $brand-primary;
+	color: #FFF;
+}
+
+.ba-suscribe-form {
+	background: #FFF;
+	color: $text-color;
+	padding: 10px;
+
+	&__inputs {
+		display: flex;
+		.form-control {
+			background: #FFF;
+		}
+
+		.btn {
+			padding: 0 48p;
+		}
+	}
+}
+
 

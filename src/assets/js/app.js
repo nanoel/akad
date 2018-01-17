@@ -14,7 +14,7 @@
 
 		$slider.slick({
 			autoplay: true,
-			autoplaySpeed: 3000,
+			autoplaySpeed: 2500,
 			arrows: false,
 			dots: true,
 			slide: '.ba-slide'
