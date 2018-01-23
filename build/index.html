@@ -76,7 +76,7 @@
 
 		<div class="container">
 			<div class="ba-intro__body text-center">
-				<h1 class="ba-page-title">
+				<h1 class="ba-page-title ba-page-title--home">
 					<span class="ba-page-title__sup">WE'RE</span>
 					CREATIVE AGENCY
 				</h1>
@@ -100,13 +100,21 @@
 
 					<!-- BEGIN class="col-xs-12 col-sm-6 col-md-5  -->
 					<div class="col-xs-12 col-sm-6 col-md-offset-1">
-						<h3>
-							HISTORY OF AGENCY
-						</h3>
-						<p>
-							Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.
-						</p>
-						<a href="#" class="btn btn-primary">Read more</a>
+						<!-- BEGIN ba-history  -->
+						<div class="ba-history">
+							<h2 class="ba-title">
+								<span>HISTORY OF AGENCY</span>
+							</h2>
+							<p>
+								Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.
+							</p>
+							<!-- BEGIN text-right  -->
+							<div class="text-right">
+								<a href="#" class="btn btn-primary">Read more</a>
+							</div>
+							<!-- END text-right -->
+						</div>
+						<!-- END ba-history -->
 					</div>
 					<!-- END class="col-xs-12 col-sm-6 col-md-5 -->
 				</div>
@@ -122,144 +130,359 @@
 
 	</div>
 
-	<main>
+	<main class="ba-main-home">
 		<!-- BEGIN container  -->
 		<div class="container">
+
+			<!-- BEGIN ba-section  -->
+			<section class="ba-section">
+				<!-- BEGIN ba-section__content  -->
+				<div class="ba-section__content">
+
+					<h2 class="ba-title">
+						<span>WHY CHOOSE US</span>
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+				</div>
+				<!-- END ba-section__content -->
+
+				<!-- BEGIN ba-choose__content  -->
+				<div class="ba-choose__content">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-xs-6 ba-choose__options">
+									<i class="ion-ios-infinite-outline"></i>
+									<h4>unlimited options</h4>
+									<ul>
+										<li>Branding</li>
+										<li>Design & Copywriting</li>
+										<li>Concept development</li>
+										<li>User Experience</li>
+									</ul>
+								</div>
+
+								<div class="col-xs-6 ba-choose__options">
+									<i class="ion-ios-shuffle"></i>
+									<h4>DESIGN & DEVELOPMENT</h4>
+									<ul>
+										<li>Information architecture</li>
+										<li>Interface design</li>
+										<li>Product Design</li>
+										<li>Integrated ad Companies</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 ba-choose__options">
+									<i class="ion-ios-cart-outline"></i>
+									<h4>e-commerce</h4>
+									<ul>
+										<li>Prototyping</li>
+										<li>Technical Consulting</li>
+										<li>Web applications</li>
+										<li>Quality testing</li>
+									</ul>
+								</div>
+
+								<div class="col-xs-6 ba-choose__options">
+									<i class="ion-ios-settings"></i>
+									<h4>CUSTOMIZABLE DESIGN</h4>
+									<ul>
+										<li>Information architecture</li>
+										<li>Interface design</li>
+										<li>Product Design</li>
+										<li>Integrated ad Companies</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="col-md-5 col-md-offset-1">
+							<img src="./assets/img/chair.jpg" alt="chair">
+						</div>
+					</div>
+				</div>
+				<!-- END ba-choose__content -->
+			</section>
+			<!-- END ba-section -->
+
+
+			<!-- BEGIN ba-section  -->
+			<section class="ba-section">
+				<!-- BEGIN ba-section__content  -->
+				<div class="ba-section__content">
+					<h2 class="ba-title">
+						<span>OUR PORTFOLIO</span>
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+				</div>
+				<!-- END ba-section__content -->
+
+
+				<div class="row">
+					<!-- BEGIN ba-works  -->
+					<div class="ba-works" id="portfolio">
+
+						<!-- BEGIN row  -->
+
+
+						<!-- BEGIN ba-menu  -->
+						<div class="ba-works__menu col-md-3">
+							<h2 class="ba-title ba-works__title">
+								CHOOSE CATEGORY
+							</h2>
+							<!-- BEGIN ba-portfolio-filter  -->
+							<ul class="ba-portfolio-filter">
+
+
+								<li>
+									<button data-filter="*" type="button" class="ba-filter-button ba-active">All</button>
+								</li>
+								<li>
+									<button data-filter=".webdesign" type="button" class="ba-filter-button">webdesign</button>
+								</li>
+								<li>
+									<button data-filter=".graphic-design" type="button" class="ba-filter-button">graphic-design</button>
+								</li>
+								<li>
+									<button data-filter=".fashion" type="button" class="ba-filter-button">fashion</button>
+								</li>
+								<li>
+									<button data-filter=".logo-design" type="button" class="ba-filter-button">logo-design</button>
+								</li>
+								<li>
+									<button data-filter=".advertising" type="button" class="ba-filter-button">advertising</button>
+								</li>
+							</ul>
+							<!-- END ba-portfolio-filter -->
+						</div>
+						<!-- END ba-menu -->
+
+
+						<!-- <div class="ba-grid-sizer"></div> -->
+						<div class="col-md-9">
+							<!-- BEGIN ba-portfolio  -->
+							<div class="ba-portfolio">
+
+
+								<div class="ba-portfolio__item abstract graphic-design">
+									<img src="assets/img/portfolio/stairs.png" alt="stairs">
+								</div>
+								<div class="ba-portfolio__item product">
+									<img src="assets/img/portfolio/forest.png" alt="forest">
+								</div>
+								<div class="ba-portfolio__item graphic-design abstract fashion">
+									<img src="assets/img/portfolio/purple-box.png" alt="purple-box">
+								</div>
+								<div class="ba-portfolio__item graphic-design">
+									<img src="assets/img/portfolio/botles.png" alt="botles">
+								</div>
+								<div class="ba-portfolio__item advertising logo-design graphic-design">
+									<img src="assets/img/portfolio/roam.png" alt="roam">
+								</div>
+								<div class="ba-portfolio__item advertising">
+									<img src="assets/img/portfolio/black-botle.png" alt="black-botle">
+								</div>
+								<div class="ba-portfolio__item advertising webdesign logo-design">
+									<img src="assets/img/portfolio/red-cow.png" alt="red-cow">
+								</div>
+								<div class="ba-portfolio__item advertising">
+									<img src="assets/img/portfolio/blue-cow.png" alt="blue-cow">
+								</div>
+								<div class="ba-portfolio__item graphic-design fashion">
+									<img src="assets/img/portfolio/pencils.png" alt="pencils">
+								</div>
+							</div>
+							<!-- END ba-portfolio -->
+						</div>
+
+					</div>
+					<!-- END ba-works -->
+
+				</div>
+				<!-- END row -->
+			</section>
+			<!-- END ba-section -->
 
 		</div>
 		<!-- END container -->
 	</main>
 
-	<footer class="ba-footer">
+	<!-- BEGIN ba-suscribe ba-section  -->
+
+	<section class="ba-suscribe ba-section">
+
+	
+
+		<!-- BEGIN container  -->
 
 		<div class="container">
 
-			<!-- BEGIN row  -->
+		    <!-- BEGIN col-md-6  -->
 
-			<div class="row">
+		    <div class="col-md-6">
 
-			    <!-- BEGIN col-md-8  -->
+		        <!-- BEGIN ba-call-to-action  -->
 
-			    <div class="col-md-8">
+		        <div class="ba-call-to-action">
 
-			        <nav>
+		            <h2>
 
-			        	<ul class="nav navbar-nav ba-footer-menu">
+		            	YOU THINK WE'RE COOL ? LET'S WORK TOGETHER
 
-			        	  <li>
-
-			        	    <a href="index.html">
-
-			        	      HOME
-
-			        	    </a>
-
-			        	  </li>
+		            </h2>
 
 	
 
-			        	  <li>
+		            <a href="#" class="btn btn--light">get in touch</a>
 
-			        	    <a href="about.html">
+		        </div>
 
-			        	      ABOUT
+		        <!-- END ba-call-to-action -->
 
-			        	    </a>
+		    </div>
 
-			        	  </li>
-
-	
-
-			        	  <li>
-
-			        	    <a href="services.html">
-
-			        	      SERVICES
-
-			        	    </a>
-
-			        	  </li>
+		    <!-- END col-md-6 -->
 
 	
 
-			        	  <li>
+		    <!-- BEGIN col-md-6  -->
 
-			        	    <a href="blog.html">
+		    <div class="col-md-6">
 
-			        	      BLOG
+		        <form action="#" method="post" class="ba-subscribe-form">
 
-			        	    </a>
+		        	<h3>
 
-			        	  </li>
+		        		STAY INFORMED WITH OUR NEWSLETTER
 
-	
+		        	</h3>
 
-			        	  <li>
+		        	<p>
 
-			        	    <a href="contact.html">
+		        		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-			        	      CONTACT US
-
-			        	    </a>
-
-			        	  </li>
+		        	</p>
 
 	
 
-			        	</ul>
+		        	<!-- BEGIN ba-subscribe-form__inouts  -->
 
-			        </nav>
+		        	<div class="ba-subscribe-form__inputs">
 
-			    </div>
-
-			    <!-- END col-md-8 -->
+		        	    <input class="form-control" required="" type="email" name="email" placeholder="your email">
 
 	
 
-			    <!-- BEGIN col-md-4  -->
+						<button class="btn" type="submit">send</button>
 
-			    <div class="col-md-4">
+		        	</div>
 
-			        <p>
+		        	<!-- END ba-subscribe-form__inouts -->
 
-			        	Created by akhouad 2016. All Rights Reserved
+		        </form>
 
-			        </p>
+		    </div>
 
-			        <!-- BEGIN ba-socials  -->
-
-			        <div class="ba-socials">
-
-			            <ul>
-
-			            	<li><a href=""></a></li>
-
-			            	<li><a href=""></a></li>
-
-			            	<li><a href=""></a></li>
-
-			            	<li><a href=""></a></li>
-
-			            </ul>
-
-			        </div>
-
-			        <!-- END ba-socials -->
-
-			    </div>
-
-			    <!-- END col-md-4 -->
-
-			</div>
-
-			<!-- END row -->
+		    <!-- END col-md-6 -->
 
 		</div>
 
-	</footer>
+		<!-- END container -->
 
 	
+
+	</section>
+
+	<!-- END ba-suscribe ba-section -->
+
+	
+	<footer class="ba-footer">
+		<div class="container">
+			<!-- BEGIN row  -->
+			<div class="row">
+			    <!-- BEGIN col-md-8  -->
+			    <div class="col-md-7">
+			        <nav>
+			        	<ul class="nav navbar-nav ba-footer-menu">
+			        	  <li>
+			        	    <a href="index.html">
+			        	      HOME
+			        	    </a>
+			        	  </li>
+	
+			        	  <li>
+			        	    <a href="about.html">
+			        	      ABOUT US
+			        	    </a>
+			        	  </li>
+	
+			        	  <li>
+			        	    <a href="services.html">
+			        	      SERVICES
+			        	    </a>
+			        	  </li>
+	
+			        	  <li>
+			        	    <a href="blog.html">
+			        	      PORTFOLIO
+			        	    </a>
+			        	  </li>
+	
+			        	  <li>
+			        	    <a href="blog.html">
+			        	      BLOG
+			        	    </a>
+			        	  </li>
+	
+			        	  <li>
+			        	    <a href="contact.html">
+			        	      CONTACT US
+			        	    </a>
+			        	  </li>
+	
+			        	</ul>
+			        </nav>
+			    </div>
+			    <!-- END col-md-8 -->
+	
+			    <!-- BEGIN col-md-4  -->
+			    <div class="col-md-5 col-md-4">
+			        <p class="ba-copyright">
+			        	CREATED BY AKHOUAD 2016. ALL RIGHTS RESERVED
+			        </p>
+			        <!-- BEGIN ba-socials  -->
+			        <div class="ba-socials">
+			            <ul>
+			            	<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+			            	<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+			            	<li><a href="#"><i class="ion-social-youtube"></i></a></li>
+			            	<li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+			            	<li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+			            	<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+			            </ul>
+			        </div>
+			        <!-- END ba-socials -->
+			    </div>
+			    <!-- END col-md-4 -->
+			</div>
+			<!-- END row -->
+		</div>
+	</footer>
+	
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzbBj-ZFqF3vHd0kMpkyOl2WriYCwDP_o"></script>
+	
+	<!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+	
 	<script src="assets/js/app.js"></script>
+	
 	
 </body>
 </html>

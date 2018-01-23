@@ -2,17 +2,33 @@
 @import "bootstrap-variables";
 @import "bootstrap-custom";
 @import "mixins";
-@import "nav";
-@import "footer";
-
-
-
 
 @import "slick.scss";
 
+
+@import "nav";
+@import "footer";
+@import "portfolio";
+@import "contact";
+@import "blog";
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,800');
-@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	text-transform: uppercase;
+}
 
 
 img{
@@ -26,6 +42,13 @@ body{
 	color: #60606e;
 }
 
+svg {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	@include ba-transition('fill, stroke');
+}
+
 a,
 [type="submit"],
 [type="button"],
@@ -34,9 +57,15 @@ button,
 	@include ba-transition;
 }
 
+a {
+	a > svg {
+		fill: currentColor;
+	}
+}
+
 
 .btn{
-    @include ba-transition;
+	@include ba-transition;
 	display: inline-block;
 	background: $brand-primary;
 	color: #FFF;
@@ -54,8 +83,9 @@ button,
 	}
 
 	&--light {
-		background:
+		background: #fff;
 		color: $brand-primary;
+		margin-top: 20px;
 		&:hover, &:focus {
 			background: darken(#fff, 5%);
 			color: $brand-primary;
@@ -63,23 +93,86 @@ button,
 	}
 }
 
-
 .form-control {
 	box-shadow: none;
 	font-weight: 700;
 	font-size: 12px;
 	font-family: $headings-font-family;
 	text-transform: uppercase;
+	display: inline-block;
+	// width: 75%;
+}
+
+.ba-history {
+	font-size: 16px;
+	padding-bottom: $grid-gutter-width;
+	p {
+		line-height: 1.9;
+	}
+	@include breakpoint(md){
+		padding-top: 18px;
+	}
 }
 
 .ba-intro {
 	background: #ebebeb url(../img/bg.jpg) 50% 100%;
 	background-size: cover;
 
+	&__history {
+		margin-top: -115px;
+		position: relative;
+		top: 100px;
+	}
+	a {
+		padding: 0 37px;
+	}
+}
+.text-right {
+	padding-top: 12px;
 }
 
+.ba-main-home {
+	padding-top: 100px;
+}
+
+.ba-page-title {
+	text-transform: uppercase;
+	margin: 0 0 7px;
+	position: relative;
+
+	&__sup {
+		position: absolute;
+		background: $brand-primary;
+		font-size: 18px;
+		bottom: 100%;
+		left: 50%;
+		transform: translate(-50%, -10px);
+		padding: 0 20px;
+		height: 30px;
+		line-height: 34px;
+	}
+
+	&--home {
+		display: inline-block;
+		border: 10px solid currentColor;
+		padding: 4px 36px;
+		font-size: 48px;
+		letter-spacing: -0.6px;
+		margin-bottom: 25px;
+	}
+}
+
+
+
 .ba-intro__body {
-	padding: 188px 0 165px;
+	padding: 150px 0 125px;
+	max-width: 580px;
+	margin: 0 auto;
+	font-size: 16px;
+
+	& > p {
+		line-height: 1.5em;
+	}
 }
 
 .ba-flex-row {
@@ -89,7 +182,6 @@ button,
 
 .ba-title {
 	color:  rgba(96, 96, 110, 0.9);
-
 	font: 700 30px/1.6 Montserrat, sans-serif;
 }
 
@@ -108,7 +200,8 @@ button,
 }
 
 .ba-section {
-	padding-top: 140px;
+
+	padding-top: 150px;
 
 	&__head{
 		text-align: center;
@@ -120,11 +213,18 @@ button,
 	&__title{
 		margin-bottom: 8px;
 	}
+
+	&__content{
+		max-width: 750px;
+		margin: 0 auto 100px;
+		text-align: center;
+	}
 }
 
 .ba-title span {
 	display: inline-block;
 	position: relative;
+	z-index: 0;
 }
 
 .ba-title span:before {
@@ -171,21 +271,6 @@ button,
 	}
 }
 
-.ba-section {
-	padding-top: 140px;
-
-	&__head{
-		text-align: center;
-		margin: 0 auto 90px;
-		padding-top: 6px;
-		max-width: 750px;
-	}
-
-	&__title{
-		margin-bottom: 8px;
-	}
-}
-
 .ba-team-column {
 	margin-bottom: 30px;
 }
@@ -197,7 +282,7 @@ button,
 		border: solid 1px rgba(0,0,0,.1);
 
 		height: 100px;
-    	padding: 10px 20px;
+		padding: 10px 20px;
 	}
 
 	&-column{
@@ -214,7 +299,7 @@ button,
 .ba-read-more{
 	background:  rgba(96, 96, 110, 0.1);
 	padding: 50px 30px;
-	margin-top: 30px;
+	// margin-top: 30px;
 	button{
 		float: right;
 		padding: 0 40px;
@@ -231,14 +316,33 @@ button,
 		margin: 0;
 		font-style: italic;
 	}
-
 }
 
+.ba-dude {
+	img {
+		display: inline-block;
+	}
 
+	p {
+		margin: 18px 0;
+	}
+
+	&__label {
+		text-transform: uppercase;
+		color:  #ffffff;
+		font: 700 14px/2 $headings-font-family;
+		padding: 5px 12px;
+	}
+}
+
+.ba-section__clients {
+	margin-bottom: 70px;
+}
 
 .slick{
+
 	&-dots{
-		margin: 0;
+		margin: 30px 0 0;
 		padding: 0;
 		list-style: none;
 		text-align: center;
@@ -269,21 +373,66 @@ button,
 .ba-suscribe {
 	background: $brand-primary;
 	color: #FFF;
+	padding: 40px 0 50px;
+	margin-top: 50px;
 }
 
-.ba-suscribe-form {
+.ba-subscribe-form {
 	background: #FFF;
 	color: $text-color;
-	padding: 10px;
+	padding: 13px 7px 10px 26px;
+	margin-top: 10px;
 
 	&__inputs {
 		display: flex;
+		margin: 19px 0 8px;
 		.form-control {
 			background: #FFF;
 		}
 
 		.btn {
-			padding: 0 48p;
+			padding: 0 48px;
+		}
+	}
+}
+
+.ba-call-to-action {
+	margin-bottom: $grid-gutter-width;
+	margin-left: -15px;
+	letter-spacing: 0.0003em;
+}
+
+.breadcrumb {
+	li {
+		text-transform: uppercase;
+		font: 700 14px/1 $headings-font-family;
+
+		& + li {
+		}
+		& > a {
+			padding: 0;
+			&:hover {
+				color: #000;
+				text-decoration: none;
+			}
+
+		}
+	}
+}
+
+.ba-choose__options {
+	display: flex;
+	flex-direction: column;
+
+	i {
+		font-size: 36px;
+	}
+
+	ul {
+		padding: 0;
+		list-style: none;
+		li {
+			text-transform: uppercase;
 		}
 	}
 }
